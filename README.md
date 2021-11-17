@@ -1,7 +1,9 @@
 # Try Hack Me - IDE
 
+**Maquina: [IDE](https://tryhackme.com/room/ide)** 
+
 **Categorias:** Enumeration, public exploit, privilege escalation, ftp  
-**Dificuldade:** Facil  
+**Dificuldade:** Fácil
 
 ## $IP = ip da maquina
 
