@@ -18,11 +18,13 @@ Seguindo o scan nas 4 portas encontradas (21, 22, 80 ,62337) utilizando scripts 
 ## Vemos que um script detectou que é possivel se logar como anonymous
 
 ![InkedScreenshot_2021-11-11_21_00_22_LI](https://user-images.githubusercontent.com/32500664/141433252-aa447938-c761-4861-beea-5f3759026026.jpg)
+
 ![imagem_2021-11-12_052952](https://user-images.githubusercontent.com/32500664/141435523-bfcee4b4-9ca9-4315-8e2b-cb0b518e77ce.png)
 
 ## Ao logar encontramos:
 
 ![Screenshot_2021-11-11_21_25_21](https://user-images.githubusercontent.com/32500664/141433697-bfefe08f-eb36-4261-b010-e4dc63d90dd0.png)
+
 ![Screenshot_2021-11-11_21_25_29](https://user-images.githubusercontent.com/32500664/141433726-06dd1a67-d45a-4167-b392-2343977a85a3.png)
 
 Temos 2 possiveis nomes de usuários - Drac e John - e sabemos que John tem uma senha "default", mas aonde eu uso isso ?
@@ -32,7 +34,7 @@ A pagina http rodando na porta 62377
 
 ![image](https://user-images.githubusercontent.com/32500664/141434714-1a5c7132-3cd0-4e74-8153-7ce53b71ccf8.png)
 
-Tentando possiveis senhas defaults com os usuários encontrados antes, consigo logar com o usuário jhon usando a senha "password".
+Tentando possiveis senhas defaults com os usuários encontrados antes, consigo logar com o usuário jhon usando a senha password.
 
 ![Screenshot_2021-11-11_21_31_35](https://user-images.githubusercontent.com/32500664/141436391-68241763-25ef-48ef-864d-f8ae91459086.png)
 
@@ -48,7 +50,7 @@ python exploit.py [URL] [USERNAME] [PASSWORD] [IP] [PORT] [PLATFORM]
 
 executando o exploit.
 
-![Screenshot_2021-11-11_23_22_59](https://user-images.githubusercontent.com/32500664/141437559-4f23a7fd-f02c-4d23-8613-3c0122b3df90.png)
+![InkedScreenshot_2021-11-11_23_22_59_LI](https://user-images.githubusercontent.com/32500664/142223593-0cd11b3a-fe64-4234-8a7a-95cf6c0d9d5d.jpg)
 
 ## Estamos dentro 😎
 ![Screenshot_2021-11-11_23_23_05](https://user-images.githubusercontent.com/32500664/141437566-b596b513-5db5-4cfe-950b-9457a615ccf4.png)
@@ -87,12 +89,14 @@ Retorno dos comandos:
 Linpeas trouxe algo interessante...
 
 ![Screenshot_2021-11-11_23_41_25](https://user-images.githubusercontent.com/32500664/141441395-ed3e5667-d471-403b-9529-897e09777881.png)
+
 ![Screenshot_2021-11-11_23_44_43](https://user-images.githubusercontent.com/32500664/141441518-3cdadc27-6e8d-40ce-b297-ef34226c494e.png)
 
 O arquivo do vsftpd.service nos permite configurar um comando que será feito após o seu inicio.
 Sendo assim podemos inserir um comando dentro do arquivo e reiniciar o serviço para força-lo a rodar o comando.
 
 Inserindo o comando dentro do arquivo.
+
 ![image (2)](https://user-images.githubusercontent.com/32500664/141442137-a91bf16f-6b3a-4fb9-8958-6987a6c5515b.png)
 
 Após fazer a modificação execute os seguintes comandos para reiniciar o serviço.
