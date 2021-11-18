@@ -34,7 +34,7 @@ A pagina http rodando na porta 62377
 
 ![image](https://user-images.githubusercontent.com/32500664/141434714-1a5c7132-3cd0-4e74-8153-7ce53b71ccf8.png)
 
-Tentando possiveis senhas defaults com os usuários encontrados antes, consigo logar com o usuário jhon usando a senha password.
+Tentando possiveis [senhas defaults](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Default-Credentials/vnc-betterdefaultpasslist.txt) com os usuários encontrados antes, consigo encontrar a senha de jhon utilizando a lista a cima. (caso não tivessemos informação sobre a senha seria necessário um ataque de força bruta utilizando um wordlist maior, porém, com essa pequena lista e minhas mãos já deu.)
 
 ![Screenshot_2021-11-11_21_31_35](https://user-images.githubusercontent.com/32500664/141436391-68241763-25ef-48ef-864d-f8ae91459086.png)
 
